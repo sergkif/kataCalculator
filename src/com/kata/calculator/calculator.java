@@ -17,7 +17,7 @@ public class calculator {
 
     public static Node Insert (Node root, Integer token) {
         if(root == null) {
-            root = createNewNode(token);
+                root = createNewNode(token);
         } else if (token <= root.token) {
             root.left = Insert(root.left, token);
         } else {
@@ -33,7 +33,6 @@ public class calculator {
         System.out.print(root.token + " ");
         Node rightNode = root.right;
         print(rightNode);
-        return;
     }
 
 
