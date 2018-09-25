@@ -1,10 +1,7 @@
 package com.kata.calculator;
+import com.kata.calculator.Node;
 
-class Node {
-    public Integer token;
-    public com.kata.calculator.Node left;
-    public com.kata.calculator.Node right;
-
+public class Main {
 
     public static com.kata.calculator.Node createNewNode(Integer token) {
         com.kata.calculator.Node newNode = new com.kata.calculator.Node();
@@ -32,19 +29,17 @@ class Node {
         com.kata.calculator.Node rightNode = root.right;
         print(rightNode);
     }
-}
 
-public class Main {
     public static void main(String[] args) {
         Node root = null;
-        root = Node.Insert(root, 15);
-        root = Node.Insert(root, 10);
-        root = Node.Insert(root, 20);
-        root = Node.Insert(root, 30);
-        root = Node.Insert(root, 5);
-        root = Node.Insert(root, 100);
-        root = Node.Insert(root, 0);
-        root = Node.Insert(root, -10);
-        Node.print(root);
+        root = Insert(root, 15);
+        root = Insert(root, 10);
+        root = Insert(root, 20);
+        root = Insert(root, 30);
+        root = Insert(root, 5);
+        root = Insert(root, 100);
+        root = Insert(root, 0);
+        root = Insert(root, -10);
+        print(root);
     }
 }
